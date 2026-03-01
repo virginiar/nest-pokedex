@@ -64,3 +64,10 @@ En este proyecto se genera una API REST con Nest y se analizan los siguientes pu
 - Esquemas de validación
 - Dockerfile
 - Despliegue
+
+## Librerías necesarias
+
+La conexión con la base de datos MongoDB requiere de la librería [Mongoose](https://mongoosejs.com/) y del conector para NestJS:
+```bash
+$ npm i @nestjs/mongoose mongoose
+```
