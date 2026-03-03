@@ -71,3 +71,8 @@ La conexión con la base de datos MongoDB requiere de la librería [Mongoose](ht
 ```bash
 $ npm i @nestjs/mongoose mongoose
 ```
+
+Las validacuiones de datos se realizan con Class-validator y class-transformer:
+```bash
+$ npm i class-validator class-transformer
+```
