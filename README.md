@@ -4,7 +4,7 @@
 
 # Descripción
 
-API REST para la gestión de Pokemons con [Nest](https://github.com/nestjs/nest).
+API REST para la gestión de Pokemons con [Nest](https://github.com/nestjs/nest), basado en el curso de "Nest Desarrollo Backend escalable con Node" de [DevTalles](https://cursos.devtalles.com/) en Udemy.
 
 Como base de datos se utiliza [MongoDB](https://www.mongodb.com/) en un contenedor [Docker](https://www.docker.com/).
 
