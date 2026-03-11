@@ -44,6 +44,11 @@ $ npm run build
 $ npm run start:prod
 ```
 
+Reconstruir la base de datos con la semilla:
+
+<http://localhost:3000/api/v2/seed>
+
+
 # Aspectos analizados
 
 En este proyecto se genera una API REST con Nest y se analizan los siguientes puntos:
