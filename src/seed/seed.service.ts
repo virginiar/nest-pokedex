@@ -20,13 +20,19 @@ export class SeedService {
       'https://pokeapi.co/api/v2/pokemon?limit=5',
     );
 
-    // eslint-disable-next-line @typescript-eslint/no-misused-promises
-    data.results.forEach(async ({ name, url }) => {
+    await this.pokemonModel.deleteMany({}); // delete * from pokemons;
+
+    const pokemonToInsert: { name: string; no: number }[] = [];
+
+    data.results.forEach(({ name, url }) => {
       const segments = url.split('/');
       const no = +segments[segments.length - 2];
 
-      await this.pokemonModel.create({ name, no });
+      // await this.pokemonModel.create({ name, no });
+      pokemonToInsert.push({ name, no }); // [{ name: bulbasaur, no: 1 }]
     });
+
+    await this.pokemonModel.insertMany(pokemonToInsert);
 
     return 'Seed Executed';
   }
