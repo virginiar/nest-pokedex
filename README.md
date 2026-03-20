@@ -30,6 +30,11 @@ $ npm install
 $ docker compose up -d
 ```
 
+5. Clonar el archivo ```.env.template``` y renombar la copia a ```
+.env```
+
+6. Llenar las variables de entorno definidas en el ```.env```
+
 # Compilar y ejecutar el proyecto
 
 ```bash
@@ -82,7 +87,22 @@ Las validaciones de datos se realizan con Class-validator y class-transformer:
 $ npm i class-validator class-transformer
 ```
 
-Las peticiones HTTP se realizan con axios:
+Las peticiones HTTP se realizan con [axios](https://axios-http.com/):
 ```bash
 $ npm install axios
+```
+
+Servir archivos estáticos:
+```bash
+$ npm install @nestjs/server-static
+```
+
+Configuración para variables de entorno:
+```bash
+$ npm install @nestjs/config
+```
+
+Validación de variables de entorno con [joi](https://www.npmjs.com/package/joi)
+```bash
+$ npm install joi
 ```
